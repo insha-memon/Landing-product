@@ -13,7 +13,7 @@ This project consists of a simple landing page for a fictional Pepsi website. It
 - Social media links for Facebook, Instagram, and Twitter.
 
 ## Getting Started
-1. Clone the repository: `git clone [repository_url]`
+1. Clone the repository: `git clone [https://github.com/insha-memon/Landing-product/tree/main`]
 2. Open the project in your preferred code editor.
 
 ## Usage
