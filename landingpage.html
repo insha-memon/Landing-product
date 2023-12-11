@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="lpage.css">
-</head>
-<body>
-   <header class="header">
-     <a href="#" class="logo">Cars.</a>
-      <nav class="navbar">
-        <a href="#" style="--img:1;" class="Active" >Home</a>
-        <a href="#" style="--img:2;" >About</a>
-        <a href="#" style="--img:3;" >Review</a>
-        <a href="#" style="--img:4;" >Featured</a>
-        <a href="#" style="--img:5;" >Contacts</a>
-      </nav>
-     <div class="social-media">
-         <a href="#" style="--img:1;"><img src="\pepsi\facebook.png" alt=""></a>
-         <a href="#" style="--img:2;"><img src="\pepsi\instagram.png" alt=""></a>
-         <a href="#" style="--img:3;"><img src="\pepsi\twitter.png" alt=""></a>
-     </div> 
-</header>
-<section class="home">
-    <div class="homecontent">
-        <h1>Car Dealing Experience</h1>
-        <h3>Redefined!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Quas facere ab repellat odio, 
-            tenetur nostrum dolores aut ex <br>quidem veniam recusandae harum fugit earum saepe, <br>
-            sapiente eum. Fac ere, nihil non.</p>
-            <a href="#" class="btn">Explore Cars.</a>
-    </div>
-    <div class="homeimg">
-        <div class="rhombus"> <img src="\technohacks\car.png">
-        </div>
-    </div>
-    <div class="rhombus2"></div>
-
-
-
-</section>
+    <title> Pepsi Website Landing Page</title>
+    <link rel="stylesheet" href="landingpage.css">
+ </head>
+ <body> 
+     <section class="sec">
+          <header >
+            <a href="#" class="logo"> <img src="\technohacks\logo.png"></a> 
+              <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">Products</a></li>
+                   <li><a href="#">What's New</a></li>
+                   <li><a href="#">Newsletter</a></li>
+                   <li><a href="#">Contacts</a></li>
+              </ul>
+         </header>
+         <div class="content">
+             <div class="textbox">
+               <h2>That's What <br> <span>I Like!</span></h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>  Nesciunt in a sunt libero commodi voluptas 
+                 asperiores labore!<br> Ipsam quidem ex, quis ipsa autem, perspiciatis laboriosam <br> voluptatibus eveniet quam quod at.
+                </p>
+                <a href="#">View All Products!</a>
+             </div>
+             <div class="imgbox">
+               <img src="\technohacks\pepsi001.png" class="pepsi">
+             </div>
+              <ul class="thumb">
+                  <li> <img src="\technohacks\pepsi001.png"  onclick="imgSlider('pepsi001.png');changeBgColor('#0062be')"></li>
+                  <li> <img src="\technohacks\pepsi002.png"  onclick="imgSlider('pepsi002.png');changeBgColor('#e60c2c')"></li>
+                 <li> <img src="\technohacks\pepsi003.png"  onclick="imgSlider('pepsi003.png');changeBgColor('#1e1e1e')"></li>
+               </ul>
+               <ul class="sci">
+                <li><a href="#"><img src="\technohacks\facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="\technohacks\instagram.png" alt=""></a></li>
+                <li><a href="#"><img src="\technohacks\twitter.png" alt=""></a></li>
+                </ul>
+         </div>
+        </section>
+    <script type="text/javascript">
+    function imgSlider(anything){
+      document.querySelector('.pepsi').src = anything;
+    }
+    //function changeBgColor(color){
+      //const sec = document.querySelector('.sec');
+        //sec.style.background= color;
+    //
+    </script>
 </body>
-</html>
+</html
